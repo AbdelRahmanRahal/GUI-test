@@ -22,13 +22,13 @@ linebreak = Label(master=wndw, text="", bg="#D5E5ED")
 linebreak.grid(column= 0, row=2, columnspan=5)
 
 # ----- BUTTONS -----
-TCbttn = Button(text="Title Case")
+TCbttn = Button(text="Title Case", font=("Segoe UI", 11), fg="#001061")
 TCbttn.grid(column=1, row=3)
-UCbttn = Button(text="UPPERCASE")
+UCbttn = Button(text="UPPERCASE", font=("Segoe UI", 11), fg="#001061")
 UCbttn.grid(column=2, row=3)
-LCbttn = Button(text="lowercase")
+LCbttn = Button(text="lowercase", font=("Segoe UI", 11), fg="#001061")
 LCbttn.grid(column=3, row=3)
-ACbttn = Button(text="AlT CaSe")
+ACbttn = Button(text="AlT CaSe", font=("Segoe UI", 11), fg="#001061")
 ACbttn.grid(column=4, row=3)
 
 # ----- PROGRAM INITIATION -----
