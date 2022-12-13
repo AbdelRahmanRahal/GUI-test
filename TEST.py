@@ -4,7 +4,7 @@ from tkinter import *
 def testdisplay():
 	outputbox.insert(END, txtbox.get())
 
-# ----- WINDOW SETTINGS -----
+# ----- WINDOW SETTINGS ----
 wndw = Tk()
 wndw.title("Text Converter")
 wndw.geometry("800x450")
