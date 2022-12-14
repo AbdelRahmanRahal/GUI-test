@@ -1,13 +1,17 @@
 from tkinter import *
+from tkinter import simpledialog
 from ConverterFunctions import *
 
 # ----- FUNCTIONS -----
 def testdisplay():
+	outputbox.delete(1.0, END)
 	outputbox.insert(END, txtbox.get())
 
 # ----- Caesar Cipher -----
 def CaesarButton():
-	outputbox.insert(END, Caesar(txtbox.get()))
+	outputbox.delete(1.0, END)
+	dlgbox = simpledialog.askinteger("Caesar Cipher", "Enter number of shifts!", parent=wndw, minvalue=-25, maxvalue=25)
+	outputbox.insert(END, Caesar(txtbox.get(), dlgbox))
 
 # ----- WINDOW SETTINGS -----
 wndw = Tk()
