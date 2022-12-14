@@ -7,6 +7,11 @@ def testdisplay():
 	outputbox.delete(1.0, END)
 	outputbox.insert(END, txtbox.get())
 
+# ----- AlT CaSe -----
+def AltButton():
+	outputbox.delete(1.0, END)
+	outputbox.insert(END, Alt(txtbox.get()))
+
 # ----- Caesar Cipher -----
 def CaesarButton():
 	outputbox.delete(1.0, END)
@@ -40,7 +45,7 @@ UCbttn = Button(text="UPPERCASE", font=("Segoe UI", 11), fg="#001061")
 UCbttn.grid(column=2, row=3)
 LCbttn = Button(text="lowercase", font=("Segoe UI", 11), fg="#001061")
 LCbttn.grid(column=3, row=3)
-ACbttn = Button(text="AlT CaSe", font=("Segoe UI", 11), fg="#001061")
+ACbttn = Button(text="AlT CaSe", font=("Segoe UI", 11), fg="#001061", command=AltButton)
 ACbttn.grid(column=4, row=3)
 CCbttn = Button(text="Caesar Cipher", font=("Segoe UI", 11), fg="#001061", command=CaesarButton)
 CCbttn.grid(column=5, row=3)
