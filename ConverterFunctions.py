@@ -1,3 +1,4 @@
+# ----- Alt Case -----
 def Alt(txt):
 	alted = ""
 
@@ -9,6 +10,7 @@ def Alt(txt):
 
 	return alted
 
+# ----- Caesar Cipher -----
 def Caesar(txt, shift):
 	encrypted = ""
 
