@@ -22,7 +22,7 @@ for word in inplist:
 	# 	if word not in ignrdwords:
 	# 		inplist[cnt] = word[0].upper() + word[1:]
 	elif not ((word in ignrdwords) and (cnt > 0) and (cnt < (len(inplist) - 1))):
-		inplist[cnt] = word[0].upper() + word[1:]
+		inplist[cnt] = word[0].upper() + word[1:] 
 	else:
 		pass
 
