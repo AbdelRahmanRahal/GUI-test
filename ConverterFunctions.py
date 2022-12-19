@@ -1,4 +1,4 @@
-# ----- TITLE CASE -----
+# ----- Title Case -----
 def Title(txt):
 	# ----- DECLARATIONS -----
 	ignrdwords = ["and", "as", "but", "for", "if", "nor", "or", "so", "yet", "a", "an", "the", "as", "at", "by", "for", "in", "of", "off", "on", "per", "to", "up", "via"]
@@ -22,10 +22,9 @@ def Title(txt):
 		cnt += 1
 
 	# ----- OUTPUT -----
-	titled = " ".join(inplist)
-	return titled
+	return " ".join(inplist)
 
-# ----- ALT CASE -----
+# ----- AlT CaSe -----
 def Alt(txt):
 	alted = ""
 
@@ -37,7 +36,7 @@ def Alt(txt):
 
 	return alted
 
-# ----- CAESAR CIPHER -----
+# ----- Caesar Cipher -----
 def Caesar(txt, shift):
 	encrypted = ""
 

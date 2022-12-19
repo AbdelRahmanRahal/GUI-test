@@ -7,6 +7,21 @@ def testdisplay():
 	outputbox.delete(1.0, END)
 	outputbox.insert(END, txtbox.get())
 
+# ----- Title Case -----
+def TitleButton():
+	outputbox.delete(1.0, END)
+	outputbox.insert(END, Title(txtbox.get()))
+
+# ----- UPPERCASE -----
+def UpperButton():
+	outputbox.delete(1.0, END)
+	outputbox.insert(END, txtbox.get().upper())
+
+# ----- lowercase -----
+def LowerButton():
+	outputbox.delete(1.0, END)
+	outputbox.insert(END, txtbox.get().lower())
+
 # ----- AlT CaSe -----
 def AltButton():
 	outputbox.delete(1.0, END)
@@ -39,11 +54,11 @@ linebreak1 = Label(master=wndw, text="", bg="#D5E5ED")
 linebreak1.grid(column= 0, row=2, columnspan=6)
 
 # ----- BUTTONS -----
-TCbttn = Button(text="Title Case", font=("Segoe UI", 11), fg="#001061", command=testdisplay)
+TCbttn = Button(text="Title Case", font=("Segoe UI", 11), fg="#001061", command=TitleButton)
 TCbttn.grid(column=1, row=3)
-UCbttn = Button(text="UPPERCASE", font=("Segoe UI", 11), fg="#001061")
+UCbttn = Button(text="UPPERCASE", font=("Segoe UI", 11), fg="#001061", command=UpperButton)
 UCbttn.grid(column=2, row=3)
-LCbttn = Button(text="lowercase", font=("Segoe UI", 11), fg="#001061")
+LCbttn = Button(text="lowercase", font=("Segoe UI", 11), fg="#001061", command=LowerButton)
 LCbttn.grid(column=3, row=3)
 ACbttn = Button(text="AlT CaSe", font=("Segoe UI", 11), fg="#001061", command=AltButton)
 ACbttn.grid(column=4, row=3)
