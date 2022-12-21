@@ -67,13 +67,8 @@ linebreak2.grid(column= 0, row=4, columnspan=6)
 # ----- OUTPUT -----
 boxlabel2 = Label(master=wndw, text="Converted text:", font=("Segoe UI", 16), fg="#001061", bg="#D5E5ED")
 boxlabel2.grid(column=0, row=5)
-<<<<<<< HEAD
-outputbox = Text(master=wndw, height=1, width=35, font=("Segoe UI", 16), fg="#001061")
-outputbox.grid(column=1, row=5, columnspan=4)
-=======
 outputbox = Text(master=wndw, height=1, width=45, font=("Segoe UI", 16), fg="#001061")
 outputbox.grid(column=1, row=5, columnspan=5)
->>>>>>> Caeser-Experiment
 
 # ----- PROGRAM INITIATION -----
 wndw.mainloop()
