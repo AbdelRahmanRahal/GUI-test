@@ -3,10 +3,6 @@ from tkinter import simpledialog
 from ConverterFunctions import *
 
 # ----- FUNCTIONS -----
-def testdisplay():
-	outputbox.delete(1.0, END)
-	outputbox.insert(END, txtbox.get())
-
 # ----- Title Case -----
 def TitleButton():
 	outputbox.delete(1.0, END)
