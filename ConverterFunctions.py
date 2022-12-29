@@ -59,6 +59,10 @@ def PasswordGen(txt, PGchckboxVar):
 
 	# ----- PASSWORD GENERATOR MECHANISM -----
 	for i in range(len(inplist)):
+		uindex = randint(0, len(inplist)- 1)
+		lindex = randint(0, len(inplist)- 1)
+		inplist[uindex] = inplist[uindex].upper()
+		inplist[lindex] = inplist[lindex].lower()
 		inplist.append(choice(symbols))
 		inplist.append(str(randint(0,9)))
 
