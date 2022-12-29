@@ -44,3 +44,23 @@ def Caesar(txt, shift):
 		encrypted += chr(ord(char) + shift)
 
 	return encrypted
+
+# ----- Password Generator -----
+def PasswordGen(txt, PGchckboxVar):
+	from random import choice, randint, shuffle
+
+	# ----- ALLOW SPACES CHECKBOX CONFIGURATION AND DECLARATIONS-----
+	if PGchckboxVar.get() == False:
+		symbols = "*&!$%@_"
+		inplist = list(txt.replace(" ", ""))
+	else:
+		symbols = "*&!$%@_ "
+		inplist = list(txt)
+
+	# ----- PASSWORD GENERATOR MECHANISM -----
+	for i in range(len(inplist)):
+		inplist.append(choice(symbols))
+		inplist.append(str(randint(0,9)))
+
+	shuffle(inplist)
+	return "".join(inplist)
