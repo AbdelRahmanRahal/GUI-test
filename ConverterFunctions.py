@@ -36,6 +36,13 @@ def Alt(txt):
 
 	return alted
 
+# ----- Spell Checker -----
+def Spell(txt):
+    from textblob import TextBlob
+    blob = TextBlob(txt)
+    
+    return blob.correct()
+
 # ----- Caesar Cipher -----
 def Caesar(txt, shift):
 	encrypted = ""
