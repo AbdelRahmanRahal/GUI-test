@@ -23,6 +23,11 @@ def AltButton():
 	outputbox.delete(1.0, END)
 	outputbox.insert(END, Alt(txtbox.get()))
 
+# ----- Spell Checker -----
+def SpellButton():
+	outputbox.delete(1.0, END)
+	outputbox.insert(END, Spell(txtbox.get()))
+
 # ----- Caesar Cipher -----
 def CaesarButton():
 	outputbox.delete(1.0, END)
@@ -37,12 +42,12 @@ def PasswordButton():
 # ----- WINDOW SETTINGS -----
 wndw = Tk()
 wndw.title("Text Converter")
-wndw.geometry("800x450")
+wndw.geometry("720x405")
 wndw.configure(bg="#D5E5ED")
 
 # ----- TITLE -----
 titlelabel = Label(master=wndw, text="Text Converter\n", font=("Segoe UI", 22, "bold", "underline"), fg="#001061", bg="#D5E5ED")
-titlelabel.grid(column=1, columnspan=5)
+titlelabel.grid(column=1, columnspan=4)
 
 # ----- BODY -----
 # ----- INPUT -----
@@ -63,7 +68,7 @@ LCbttn = Button(text="lowercase", font=("Segoe UI", 11), fg="#001061", command=L
 LCbttn.grid(column=3, row=3)
 ACbttn = Button(text="AlT CaSe", font=("Segoe UI", 11), fg="#001061", command=AltButton)
 ACbttn.grid(column=4, row=3)
-SCbttn = Button(text="Spelling Checker", font=("Segoe UI", 11), fg="#001061", command=CaesarButton)
+SCbttn = Button(text="Spell Check", font=("Segoe UI", 11), fg="#001061", command=SpellButton)
 SCbttn.grid(column=5, row=3)
 
 linebreak2 = Label(master=wndw, text="", bg="#D5E5ED")
