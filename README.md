@@ -1,2 +1,2 @@
 # Text Converter
- Basic text converter application with GUI using .
+ Basic text converter application with GUI using python.
